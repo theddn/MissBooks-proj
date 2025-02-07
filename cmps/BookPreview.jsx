@@ -1,11 +1,7 @@
-
-export function UserPreview() {
-    const user = { fullname: 'Puki Reactof', score: 87 }
-    
+export function BookPreview() {
     return (
-        <section className="user-preview">
-            <h2>{user.fullname}</h2>
-            <h3>Score: {user.score}</h3>
+        <section className="book-preview">
+            <h1>book-preview</h1>
         </section>
     )
 }
