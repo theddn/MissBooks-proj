@@ -1,7 +1,8 @@
-export function BookPreview() {
+export function BookPreview({ book }) {
     return (
         <section className="book-preview">
-            <h1> Book preview </h1>
+            <h4>book name</h4>
+            <img src={`../assets/img/${book}.jpg`} />
         </section>
     )
 }

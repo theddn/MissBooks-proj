@@ -1,10 +1,10 @@
-const { useState } = React
-
 import { AppHeader } from './cmps/AppHeader.jsx'
 
+import { AboutUs } from './pages/AboutUs.jsx'
 import { HomePage } from './pages/HomePage.jsx'
-import { AboutUs } from './pages/About.jsx'
 import { BookIndex } from './pages/BookIndex.jsx'
+
+const { useState } = React
 
 export function App() {
     const [page, setPage] = useState('book')
@@ -18,10 +18,10 @@ export function App() {
             <header>
                 <AppHeader onSetPage={onSetPage} />
             </header>
-            <main>
+            <main className="main-layout">
                 {page === 'home' && <HomePage />}
                 {page === 'about' && <AboutUs />}
-                {page === 'home' && <BookIndex />}
+                {page === 'book' && <BookIndex />}
             </main>
         </section>
     )
