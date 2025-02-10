@@ -1,5 +1,18 @@
 .app-header {
-    background-color: var(--clr1);
-    color: var(--clr1bg);
-    padding-block: 1em;
+  background-color: var(--clr1);
+  color: var(--clr1bg);
+  padding-block: 1em;
+}
+
+.app-nav > *:not(:last-child) {
+  margin-right: 1rem;
+}
+.app-nav > * {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.app-nav > *:hover {
+  color: rgb(119, 109, 109);
 }
